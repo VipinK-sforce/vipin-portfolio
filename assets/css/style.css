@@ -501,6 +501,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .main-timeline .description {
     font-size: 14px;
     color: #999fb3;
+	text-align: justify;
 }
 .main-timeline .timeline-content.right{
     float: right;
@@ -855,6 +856,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*========================Thank you=================
+
 
 
 
