@@ -936,81 +936,19 @@
         <div class="section-heading text-center">
             <h2>Git Hub Projects</h2>
         </div>
+		<!-- GitHub Projects start -->
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-details">
+        <div class="section-heading text-center">
+            <h2>GitHub Projects</h2>
+        </div>
 
         <div class="container">
             <div class="portfolio-content">
                 <div class="isotope">
-                    <div class="row">
+                    <div class="row" id="github-projects">
 
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/sales_cloud.png" alt="Sales Cloud"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Sales Cloud</a>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="assets/images/portfolio/service_cloud.png" alt="Service Cloud"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Service Cloud</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/health_cloud.png" alt="Health Cloud"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Health Cloud</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/lwc.png" alt="Lightning Web Components"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">LWC</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/flow.png" alt="Apex"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Flow</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/admin.png" alt="Salesforce Admin"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Admin</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/development.png" alt="Salesforce Development"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Development</a>
-                                </div>
-                            </div>
-                        </div>
-
-						 <div class="col-sm-4">
-                            <div class="item">
-                                <img src="assets/images/portfolio/integration.png" alt="Salesforce integration"/>
-                                <div class="isotope-overlay">
-                                    <a href="#">Integration</a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- GitHub repos will load here dynamically -->
 
                     </div>
                 </div>
@@ -1018,6 +956,72 @@
         </div>
 
     </div>
+</section>
+<!-- GitHub Projects end -->
+
+
+<script>
+fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
+.then(response => response.json())
+.then(data => {
+
+    let html = "";
+
+    data.slice(0,6).forEach(repo => {
+
+        // Default image mapping based on repo name keywords
+        let image = "assets/images/portfolio/development.png";
+
+        if(repo.name.toLowerCase().includes("sales"))
+            image = "assets/images/portfolio/sales_cloud.png";
+
+        else if(repo.name.toLowerCase().includes("service"))
+            image = "assets/images/portfolio/service_cloud.png";
+
+        else if(repo.name.toLowerCase().includes("health"))
+            image = "assets/images/portfolio/health_cloud.png";
+
+        else if(repo.name.toLowerCase().includes("lwc"))
+            image = "assets/images/portfolio/lwc.png";
+
+        else if(repo.name.toLowerCase().includes("flow"))
+            image = "assets/images/portfolio/flow.png";
+
+        else if(repo.name.toLowerCase().includes("integration"))
+            image = "assets/images/portfolio/integration.png";
+
+
+        html += `
+        <div class="col-sm-4">
+            <div class="item">
+                <img src="${image}" alt="${repo.name}" class="img-responsive"/>
+                <div class="isotope-overlay">
+                    <a href="${repo.html_url}" target="_blank">
+                        ${repo.name}
+                        <br>
+                        <small>${repo.description || "Salesforce Project"}</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        `;
+
+    });
+
+    document.getElementById("github-projects").innerHTML = html;
+
+})
+.catch(error => {
+    console.log("Error loading GitHub repos:", error);
+});
+</script>
+
+
+    
+            </div>
+        
+
+     
 </section>
 <!-- Git Hub Projects end -->
 
