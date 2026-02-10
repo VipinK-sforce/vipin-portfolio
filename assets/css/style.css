@@ -258,6 +258,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     color: #999fb3;
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
+	text-align: justify;
 }
 .single-about-add-info {
     margin: 35px 0;
@@ -854,4 +855,5 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*========================Thank you=================
+
 
