@@ -877,9 +877,32 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #007bff;
     font-weight: bold;
 }
+.clients {
+    padding: 80px 0;
+}
+
+.client-logo {
+    max-height: 80px;
+    width: auto;
+    margin: auto;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.section-subtitle {
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 
 
 /*========================Thank you=================
+
 
 
 
