@@ -1059,6 +1059,23 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
     </div>
 </section>
 
+		<script>
+    // Read More toggle functionality
+    const readMoreButtons = document.querySelectorAll('.read-more');
+
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const fullContent = button.nextElementSibling;
+            if(fullContent.style.display === 'block'){
+                fullContent.style.display = 'none';
+                button.textContent = 'Read More';
+            } else {
+                fullContent.style.display = 'block';
+                button.textContent = 'Read Less';
+            }
+        });
+    });
+</script>
 <!-- Blog End -->
 
 		
