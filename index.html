@@ -1256,23 +1256,30 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 		<!--contact end -->
 
 		<!--footer-copyright start-->
+		<!--footer-copyright start-->
 		<footer id="footer-copyright" class="footer-copyright">
-			<div class="container">
-				<div class="hm-footer-copyright text-center">
-					<p>
-						&copy; copyright Vipin Kumar 2026</a>
-					</p><!--/p-->
-				</div><!--/.text-center-->
-			</div><!--/.container-->
+		    <div class="container">
+		        <div class="hm-footer-copyright text-center">
+		            <p>
+		                &copy; <span id="current-year"></span> Vipin Kumar. All rights reserved.
+		            </p>
+		        </div>
+		    </div>
+		
+		    <!-- Scroll to top -->
+		    <div id="scroll-Top">
+		        <div class="return-to-top">
+		            <i class="fa fa-angle-up" id="scroll-top"></i>
+		        </div>
+		    </div>
+		
+		</footer>
+					<script>
+document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-copyright-->
+<!--footer-copyright end-->
+
 		<!--footer-copyright end-->
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
