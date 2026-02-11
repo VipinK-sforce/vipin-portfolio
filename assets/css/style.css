@@ -854,8 +854,33 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+.achievement-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.achievement-list li {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.achievement-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
 
 /*========================Thank you=================
+
 
 
 
