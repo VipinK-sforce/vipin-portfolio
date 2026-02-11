@@ -148,6 +148,42 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
+.menu-ui-design .nav {
+    display: flex !important;       /* make <ul> a flex container */
+    flex-wrap: nowrap;              /* prevent wrapping */
+    justify-content: flex-end;      /* align to right */
+    align-items: center;            /* vertical alignment */
+    gap: 15px;                      /* spacing between menu items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-ui-design .nav li {
+    display: inline-block;          /* ensure <li> is horizontal */
+}
+
+.menu-ui-design .nav li a {
+    display: block;
+    padding: 10px 8px;              /* adjust spacing */
+    text-decoration: none;
+    color: #fff;                     /* change color as needed */
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Optional: highlight active menu */
+.menu-ui-design .nav li.active a {
+    font-weight: bold;
+    color: #ffd700; /* golden for active */
+}
+
+/* Ensure navbar brand and menu are aligned */
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 /*.nav li*/
@@ -998,6 +1034,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     }
 }
 /*========================Thank you=================
+
 
 
 
