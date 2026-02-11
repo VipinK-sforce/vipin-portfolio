@@ -934,7 +934,7 @@
 		<!--portfolio end -->
 
 			<!-- Git Hub Projects start -->
-	<!-- GitHub Projects start -->
+<!-- GitHub Projects start -->
 <section id="github" class="portfolio">
 
     <div class="portfolio-details">
@@ -945,7 +945,10 @@
 
         <div class="container">
             <div class="portfolio-content">
-                <div class="row" id="github-projects">
+                <div class="isotope">
+                    <div class="row" id="github-projects">
+                        <!-- Dynamic content will load here -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -953,8 +956,6 @@
     </div>
 
 </section>
-<!-- GitHub Projects end -->
-
 <!-- GitHub Projects end -->
 
 
@@ -967,7 +968,6 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 
     data.slice(0,6).forEach(repo => {
 
-        // Default image mapping based on repo name keywords
         let image = "assets/images/portfolio/development.png";
 
         if(repo.name.toLowerCase().includes("sales"))
@@ -993,6 +993,7 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
         <div class="col-sm-4">
             <div class="item">
                 <img src="${image}" alt="${repo.name}" class="img-responsive"/>
+
                 <div class="isotope-overlay">
                     <a href="${repo.html_url}" target="_blank">
                         ${repo.name}
@@ -1000,28 +1001,17 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
                         <small>${repo.description || "Salesforce Project"}</small>
                     </a>
                 </div>
+
             </div>
         </div>
         `;
-
     });
 
     document.getElementById("github-projects").innerHTML = html;
 
 })
-.catch(error => {
-    console.log("Error loading GitHub repos:", error);
-});
+.catch(error => console.log(error));
 </script>
-
-
-    
-            </div>
-        
-
-     
-</section>
-<!-- Git Hub Projects end -->
 
 		<!--clients start -->
 		<section id="clients" class="clients">
