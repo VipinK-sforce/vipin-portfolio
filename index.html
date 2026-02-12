@@ -999,14 +999,18 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
         html += `
         <div class="col-sm-4">
             <div class="item">
+
+                <!-- Image -->
                 <img src="${image}" alt="${repo.name}" class="img-responsive"/>
 
+                <!-- Overlay without link -->
                 <div class="isotope-overlay">
-                    <a href="${repo.html_url}" target="_blank">
-                        ${repo.name}
-                        <br>
+
+                    <div class="project-info">
+                        <h4>${repo.name}</h4>
                         <small>${repo.description || "Salesforce Project"}</small>
-                    </a>
+                    </div>
+
                 </div>
 
             </div>
@@ -1019,6 +1023,7 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 })
 .catch(error => console.log(error));
 </script>
+
 
 
 		<!-- Blog Start -->
