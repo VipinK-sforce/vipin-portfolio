@@ -1113,7 +1113,57 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     to {transform: translateY(0); opacity: 1;}
 }
 
+
+/* Modern Premium Hero */
+
+.hero-modern {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-role {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #00c6ff;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons .btn {
+    margin: 5px 10px;
+    padding: 10px 24px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+.btn-outline {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #2c5364;
+}
+
 /*========================Thank you=================
+
 
 
 
