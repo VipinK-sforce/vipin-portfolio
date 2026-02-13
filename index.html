@@ -531,6 +531,26 @@
 
 		</section><!--/.skills-->
 		<!--skills end -->
+		<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const bars = document.querySelectorAll(".progress-bar");
+
+    bars.forEach(bar => {
+
+        const value = bar.getAttribute("aria-valuenow");
+
+        bar.style.width = "0";
+
+        setTimeout(() => {
+            bar.style.width = value + "%";
+        }, 300);
+
+    });
+
+});
+</script>
+
 
 		<!--experience start -->
 		<section id="experience" class="experience-section">
