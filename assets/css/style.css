@@ -1711,8 +1711,101 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     }
 
 }
+.glass-clients {
+
+    padding: 100px 0;
+
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+
+/* Subtitle */
+.glass-subtitle {
+
+    color: #00c6ff;
+
+    margin-top: 10px;
+
+    margin-bottom: 40px;
+}
+
+
+/* Wrapper */
+.glass-clients-wrapper {
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+
+/* Client Card */
+.glass-client-card {
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    margin: 15px;
+
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+
+.glass-client-card:hover {
+
+    transform: translateY(-10px) scale(1.05);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+
+/* Logo */
+.glass-client-logo {
+
+    width: 140px;
+
+    height: auto;
+
+    filter: brightness(0.9);
+
+    transition: 0.4s;
+}
+
+
+.glass-client-card:hover .glass-client-logo {
+
+    filter: brightness(1.2);
+
+    transform: scale(1.1);
+}
+
+
+/* Owl dots */
+.owl-dot span {
+
+    background: rgba(255,255,255,0.3) !important;
+}
+
+.owl-dot.active span {
+
+    background: #00c6ff !important;
+}
 
 /*========================Thank you=================
+
 
 
 
