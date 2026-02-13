@@ -2750,76 +2750,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -webkit-text-fill-color: transparent;
 }
 
-
-/* TEXT */
-
-.progressText {
-
-    color: white;
-
-    font-size: 16px;
-
-    font-weight: 500;
-
-    margin-bottom: 10px;
-
-    display: block;
-}
-
-.progress-value {
-
-    color: #00d4ff;
-
-    font-weight: 600;
-
-    float: right;
-
-    margin-top: 5px;
-}
-
-
-/* PROGRESS BAR */
-
-.glass-progress {
-
-    height: 10px;
-
-    border-radius: 20px;
-
-    background: rgba(255,255,255,0.08);
-
-    overflow: hidden;
-
-    margin-bottom: 20px;
-}
-
-
-.glass-bar {
-
-    height: 100%;
-
-    width: 0;
-
-    border-radius: 20px;
-
-    background: linear-gradient(90deg,#00d4ff,#0072ff);
-
-    box-shadow: 0 0 15px rgba(0,212,255,0.8);
-
-    transition: width 1.5s ease;
-}
-
-
-/* HOVER GLOW */
-
-.barWrapper:hover .glass-bar {
-
-    box-shadow:
-        0 0 20px rgba(0,212,255,1),
-        0 0 40px rgba(0,212,255,0.6);
-}
+ 
 
 /*========================Thank you=================
+
 
 
 
