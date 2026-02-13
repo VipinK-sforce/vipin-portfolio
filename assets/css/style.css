@@ -1985,7 +1985,134 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     box-shadow: 0 0 20px rgba(0,212,255,0.6);
 }
 
+/* SECTION */
+
+.platforms-section {
+
+    padding: 100px 0;
+
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Glass Title reused */
+.glassy-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.title-line {
+    width: 80px;
+    height: 4px;
+    margin: auto;
+    background: linear-gradient(90deg,#00d4ff,#0072ff);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+
+/* PLATFORM CARD */
+
+.platform-card {
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    transition: 0.4s ease;
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+
+/* Gradient border glow */
+
+.platform-card::before {
+
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:20px;
+    padding:1px;
+
+    background: linear-gradient(135deg,#00d4ff,#0072ff,#00c6ff);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+
+/* Hover Effect */
+
+.platform-card:hover {
+
+    transform: translateY(-10px) scale(1.05);
+
+    box-shadow: 0 20px 60px rgba(0,212,255,0.3);
+}
+
+
+/* Icon */
+
+.platform-card i {
+
+    font-size: 40px;
+
+    color: #00d4ff;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+
+.platform-card:hover i {
+
+    transform: scale(1.2);
+
+    color: #ffffff;
+}
+
+
+/* Text */
+
+.platform-card h4 {
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
 /*========================Thank you=================
+
 
 
 
