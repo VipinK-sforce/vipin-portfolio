@@ -1216,8 +1216,135 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-decoration: none;
 }
 
+/* Background */
+.glass-contact {
+    padding: 100px 0;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* Title */
+.glass-title {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    margin-bottom: 30px;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile Image */
+.profile-container {
+    margin-bottom: 20px;
+}
+
+.glass-profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+/* Name */
+.glass-name {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.glass-role {
+    color: #00c6ff;
+    margin-bottom: 20px;
+}
+
+/* Social icons */
+.glass-social a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.glass-social a:hover {
+    color: #00c6ff;
+    transform: scale(1.2);
+}
+
+/* Button */
+.glass-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.glass-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Info */
+.glass-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.glass-info i {
+    font-size: 24px;
+    color: #00c6ff;
+    margin-right: 20px;
+}
+
+.glass-info h4 {
+    color: white;
+    margin: 0;
+}
+
+.glass-info p,
+.glass-info a {
+    color: #ddd;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px) {
+    .glass-card {
+        text-align: center;
+    }
+
+    .glass-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .glass-info i {
+        margin-bottom: 10px;
+    }
+}
 
 /*========================Thank you=================
+
 
 
 
