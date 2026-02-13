@@ -1050,33 +1050,28 @@
 
 			<!-- Git Hub Projects start -->
 <!-- GitHub Projects start -->
-<section id="github" class="portfolio">
+<section id="github" class="github-section">
 
-    <div class="portfolio-details">
+    <div class="section-heading text-center">
+        <h2 class="glassy-title">GitHub Projects</h2>
+        <div class="title-line"></div>
+    </div>
 
-        <div class="section-heading text-center">
-            <h2>GitHub Projects</h2>
-        </div>
-
-        <div class="container">
-            <div class="portfolio-content">
-                <div class="isotope">
-                    <div class="row" id="github-projects">
-                        <!-- Dynamic content will load here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="container">
+        <div class="row" id="github-projects"></div>
     </div>
 
 </section>
+
 <!-- GitHub Projects end -->
 
 
 <script>
+
 fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
-.then(response => response.json())
+
+.then(res => res.json())
+
 .then(data => {
 
     let html = "";
@@ -1091,10 +1086,10 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
         else if(repo.name.toLowerCase().includes("service"))
             image = "assets/images/portfolio/service_cloud.png";
 
-        else if(repo.name.toLowerCase().includes("Vk"))
+        else if(repo.name.toLowerCase().includes("health"))
             image = "assets/images/portfolio/health_cloud.png";
 
-        else if(repo.name.toLowerCase().includes("Record"))
+        else if(repo.name.toLowerCase().includes("record"))
             image = "assets/images/portfolio/lwc.png";
 
         else if(repo.name.toLowerCase().includes("flow"))
@@ -1105,31 +1100,36 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 
 
         html += `
-        <div class="col-sm-4">
-            <div class="item">
 
-                <!-- Image -->
-                <img src="${image}" alt="${repo.name}" class="img-responsive"/>
+        <div class="col-md-4">
 
-                <!-- Overlay without link -->
-                <div class="isotope-overlay">
+            <div class="github-card">
 
-                    <div class="project-info">
-                        <h4>${repo.name}</h4>
-                        <small>${repo.description || "Salesforce Project"}</small>
-                    </div>
+                <img src="${image}" alt="${repo.name}">
+
+                <div class="github-info">
+
+                    <h4>${repo.name}</h4>
+
+                    <p>${repo.description || "Enterprise Salesforce Solution"}</p>
+
+                    <a href="${repo.html_url}" target="_blank" class="github-btn">
+                        View Project
+                    </a>
 
                 </div>
 
             </div>
+
         </div>
+
         `;
     });
 
     document.getElementById("github-projects").innerHTML = html;
 
-})
-.catch(error => console.log(error));
+});
+
 </script>
 
 
