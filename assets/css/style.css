@@ -1936,7 +1936,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .github-info h4 {
-
+    color: #ffffff;   /* Pure white */
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
@@ -1978,6 +1978,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*========================Thank you=================
+
 
 
 
