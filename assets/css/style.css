@@ -1342,8 +1342,77 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         margin-bottom: 10px;
     }
 }
+.glass-blog {
+    padding: 100px 0;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.glass-blog-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.4s;
+}
+
+.glass-blog-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Image */
+.glass-img-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Content */
+.glass-blog-content {
+    padding: 20px;
+}
+
+.glass-blog-content h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.glass-blog-content p {
+    color: #ccc;
+}
+
+/* Button */
+.glass-read-more {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+    color: white;
+    cursor: pointer;
+}
+
+.glass-read-more:hover {
+    transform: scale(1.05);
+}
+
+/* Full content */
+.glass-full-content {
+    display: none;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .glass-blog-card {
+        margin-bottom: 20px;
+    }
+}
 
 /*========================Thank you=================
+
 
 
 
