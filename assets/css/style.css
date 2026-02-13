@@ -1936,10 +1936,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .github-info h4 {
-    color: #ffffff;   /* Pure white */
+
     font-size: 20px;
     font-weight: 600;
+
+    color: #ffffff;
+
     margin-bottom: 8px;
+
+    letter-spacing: 0.5px;
+
+    text-shadow: 0 0 10px rgba(255,255,255,0.4);
+
 }
 
 .github-info p {
@@ -1978,6 +1986,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*========================Thank you=================
+
 
 
 
