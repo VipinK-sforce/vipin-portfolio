@@ -1175,9 +1175,50 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .resume-link:hover {
     color: #005fb2;
 }
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #0070d2;
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.hero-description {
+    margin: 20px 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background: #0070d2;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.btn-outline {
+    border: 2px solid #0070d2;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #0070d2;
+    text-decoration: none;
+}
 
 
 /*========================Thank you=================
+
 
 
 
