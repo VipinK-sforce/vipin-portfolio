@@ -1021,13 +1021,14 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 
                 <!-- Overlay without link -->
                 <div class="isotope-overlay">
+			    <a href="${repo.html_url}" target="_blank">
+			        <div class="project-info">
+			            <h4>${repo.name}</h4>
+			            <small>${repo.description || "Salesforce Project"}</small>
+			        </div>
+			    </a>
+			</div>
 
-                    <div class="project-info">
-                        <h4>${repo.name}</h4>
-                        <small>${repo.description || "Salesforce Project"}</small>
-                    </div>
-
-                </div>
 
             </div>
         </div>
