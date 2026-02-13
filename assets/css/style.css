@@ -2986,9 +2986,77 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         margin-bottom: 20px;
     }
 }
+.glass-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.glass-title {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.glass-subtitle {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 50px;
+}
+
+.glass-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 15px 0;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: 0.4s;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.12);
+}
+
+.glass-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #4fc3f7;
+}
+
+.glass-card h4 {
+    color: white;
+}
+
+.glass-card p {
+    color: rgba(255,255,255,0.7);
+}
+
+.glass-timeline {
+    margin-top: 60px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline-number {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background: #4fc3f7;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
 
 
 /*========================Thank you=================
+
 
 
 
