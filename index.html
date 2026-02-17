@@ -6,7 +6,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<meta http-equiv="Content-Security-Policy"
+		content="
+		default-src 'self';
+		img-src 'self' https: data:;
+		script-src 'self' https://api.github.com 'unsafe-inline';
+		style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+		font-src https://fonts.gstatic.com;
+		connect-src https://api.github.com;
+		">
+
 		<link rel="canonical" href="https://vipinsforce.org/" />
 
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -1103,62 +1112,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			<!-- Git Hub Projects start -->
 <!-- GitHub Projects start -->
 <!-- GitHub Projects start -->
-<div class="col-sm-3">
-
-    <a href="${repo.html_url}" target="_blank" class="github-card-link">
-
-        <div class="single-profile github-card">
-
-            <!-- Default View -->
-            <div class="profile-txt">
-
-                <img src="${image}" 
-                     alt="${repo.name}" 
-                     class="img-responsive center-block github-img"
-                     loading="lazy">
-
-                <div class="profile-icon-name">
-                    ${repo.name}
-                </div>
-
-            </div>
-
-            <!-- Hover Overlay -->
-            <div class="single-profile-overlay">
-
-                <div class="profile-txt">
-
-                    <img src="${image}" 
-                         alt="${repo.name}" 
-                         class="img-responsive center-block github-img">
-
-                    <div class="profile-icon-name">
-                        ${repo.name}
-                    </div>
-
-                    <div class="github-desc">
-                        ${repo.description || "Enterprise Salesforce Project"}
-                    </div>
-
-                    <div class="github-meta">
-                        ⭐ ${repo.stargazers_count}
-                        &nbsp;&nbsp;
-                        🍴 ${repo.forks_count}
-                    </div>
-
-                    <div class="github-btn">
-                        View Code →
-                    </div>
-
-                </div>
-
-            </div>
-
+<section id="github" class="github-premium">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 class="glossy-title">GitHub Projects</h2>
         </div>
 
-    </a>
-
-</div>
+        <div class="row" id="github-projects"></div>
+    </div>
+</section>
 
 
 <!-- GitHub Projects end -->
