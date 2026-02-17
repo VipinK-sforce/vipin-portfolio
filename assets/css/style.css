@@ -1829,107 +1829,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 
-/* CARD */
-
-.github-card-link {
-
-    display: block;
-    text-decoration: none;
-    color: inherit;
-
-}
-
-.github-card {
-
-    position: relative;
-    cursor: pointer;
-
-    border-radius: 18px;
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    background: rgba(255,255,255,0.04);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    transition: all 0.4s cubic-bezier(.2,.8,.2,1);
-
-    overflow: hidden;
-
-}
-
-/* Apple hover lift */
-.github-card:hover {
-
-    transform: translateY(-12px) scale(1.02);
-
-    box-shadow:
-        0 30px 80px rgba(0,0,0,0.5),
-        0 0 0 1px rgba(255,255,255,0.12) inset;
-
-}
-
-/* Click press effect */
-.github-card:active {
-
-    transform: translateY(-4px) scale(0.98);
-
-}
-
-/* Reflection sweep */
-.github-card::before {
-
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 60%;
-    height: 100%;
-
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.25),
-        transparent
-    );
-
-    transition: all 0.8s ease;
-
-}
-
-.github-card:hover::before {
-
-    left: 120%;
-
-}
-
-/* Premium button */
-.github-btn {
-
-    margin-top: 14px;
-    padding: 8px 18px;
-
-    border-radius: 999px;
-
-    background: rgba(255,255,255,0.08);
-
-    border: 1px solid rgba(255,255,255,0.2);
-
-    display: inline-block;
-
-    font-size: 13px;
-
-    transition: all 0.3s ease;
-
-}
-
-.github-card:hover .github-btn {
-
-    background: rgba(0,180,255,0.2);
-    border-color: rgba(0,180,255,0.5);
-
-}
+ 
 
 /* Gradient border glow */
 
@@ -3858,6 +3758,116 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 }
 /* GitHub Glass Card Enhancement */
+.github-card-link {
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.github-card {
+
+    position: relative;
+    cursor: pointer;
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: all 0.4s cubic-bezier(.2,.8,.2,1);
+
+    overflow: hidden;
+
+}
+
+/* Apple hover lift */
+.github-card:hover {
+
+    transform: translateY(-12px) scale(1.02);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.12) inset;
+
+}
+
+/* Click press effect */
+.github-card:active {
+
+    transform: translateY(-4px) scale(0.98);
+
+}
+
+/* Reflection sweep */
+.github-card::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+    );
+
+    transition: all 0.8s ease;
+
+}
+
+.github-card:hover::before {
+
+    left: 120%;
+
+}
+
+/* Premium button */
+.github-btn {
+
+    margin-top: 14px;
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    display: inline-block;
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+
+}
+
+.github-card:hover .github-btn {
+
+    background: rgba(0,180,255,0.2);
+    border-color: rgba(0,180,255,0.5);
+
+}
+.github-card-link {
+
+    transition: opacity 0.25s ease;
+
+}
+
+.github-card-link:active {
+
+    opacity: 0.7;
+
+}
 
  
 	/* Premium Contact Section */
@@ -4779,6 +4789,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 								 
 
 /*========================Thank you=================
+
 
 
 
