@@ -3613,7 +3613,173 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     100% { transform: translateX(300px); }
 
 }
+
+	/* SECTION */
+.experience-glass {
+
+    padding: 120px 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+    radial-gradient(circle at 10% 20%, rgba(0,255,255,0.12), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0,255,150,0.12), transparent 40%),
+    linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+}
+
+
+/* WRAPPER */
+.experience-glass-wrapper {
+
+    position: relative;
+
+    padding-left: 40px;
+
+}
+
+
+/* TIMELINE LINE */
+.glass-timeline-line {
+
+    position: absolute;
+
+    left: 12px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 3px;
+
+    background: linear-gradient(
+        to bottom,
+        #00f0ff,
+        #00ffa6
+    );
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.7);
+
+}
+
+
+/* ITEM */
+.glass-timeline-item {
+
+    position: relative;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* DOT */
+.glass-timeline-dot {
+
+    position: absolute;
+
+    left: -2px;
+
+    top: 10px;
+
+    width: 16px;
+
+    height: 16px;
+
+    background: #00ffe5;
+
+    border-radius: 50%;
+
+    box-shadow:
+    0 0 15px #00ffe5;
+
+}
+
+
+/* CARD */
+.glass-exp-card {
+
+    backdrop-filter: blur(25px);
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.15);
+
+    transition: 0.4s;
+
+}
+
+
+.glass-exp-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+    0 0 45px rgba(0,255,255,0.4);
+
+}
+
+
+/* TEXT */
+.glass-exp-year {
+
+    color: #00ffe5;
+
+    font-weight: 500;
+
+    margin-bottom: 6px;
+
+}
+
+
+.glass-exp-role {
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
+
+.glass-exp-company {
+
+    color: rgba(255,255,255,0.9);
+
+    margin-top: 6px;
+
+}
+
+
+.glass-exp-location {
+
+    color: rgba(0,255,200,0.7);
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.glass-exp-desc {
+
+    color: rgba(255,255,255,0.8);
+
+    line-height: 1.6;
+
+}
 /*========================Thank you=================
+
 
 
 
