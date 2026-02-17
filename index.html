@@ -1436,16 +1436,18 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 
 
 		<script>
-    // Read More toggle functionality
-   document.querySelectorAll(".read-btn").forEach(button => {
+ document.querySelectorAll(".blog-btn").forEach(btn => {
 
-    button.addEventListener("click", function(){
+    btn.addEventListener("click", () => {
 
-        this.closest(".blog-card").classList.toggle("active");
+        const card = btn.closest(".blog-card");
+
+        card.classList.toggle("active");
 
     });
 
 });
+;
 
 </script>
 <!-- Blog End -->
