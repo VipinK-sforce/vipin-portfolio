@@ -249,18 +249,21 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .welcome-hero-premium {
 
     position: relative;
-
     min-height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    /* Your exact background image */
     background:
-		url("assets/images/about/welcome_banner2.png")center/cover no-repeat;
-    
+        url("assets/images/hero/your-image.jpg") center center / cover no-repeat;
 
     overflow: hidden;
+
+    /* Performance optimization */
+    will-change: transform;
+    transform: translateZ(0);
 
 }
 
@@ -279,7 +282,55 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 }
 
+/* Premium dark glass overlay for readability */
+.welcome-hero-premium::before {
 
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(10,15,25,0.85),
+            rgba(15,25,45,0.65),
+            rgba(10,15,25,0.9)
+        );
+
+    z-index: 1;
+
+}
+
+/* Subtle light reflection layer (Apple style depth) */
+.welcome-hero-premium::after {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(255,255,255,0.08),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(0,180,255,0.08),
+            transparent 40%
+        );
+
+    z-index: 2;
+
+}
+
+/* Ensure your text appears above overlays */
+.welcome-hero-premium .header-text {
+
+    position: relative;
+    z-index: 3;
+
+}
 /* Glass container */
 .hero-glass {
 
@@ -5084,6 +5135,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 								 
 
 /*========================Thank you=================
+
 
 
 
