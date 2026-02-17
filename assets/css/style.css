@@ -3398,70 +3398,67 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 /* PROGRESS BACKGROUND */
 .glass-progress {
-
-    height: 12px;
-
+    width: 100%;
+    height: 10px;
     background: rgba(255,255,255,0.08);
-
     border-radius: 20px;
-
-    overflow: hidden;
-
-    box-shadow:
-    inset 0 0 10px rgba(0,255,255,0.2);
-
+    overflow: hidden; /* IMPORTANT: prevents highlight overflow */
+    position: relative;
 }
 
 
 /* PROGRESS BAR */
+/* Actual progress bar */
 .glass-progress-bar {
-
     height: 100%;
-
     width: 0;
-
     border-radius: 20px;
-
+    position: relative;
+    
+    /* Glass gradient */
     background: linear-gradient(
         90deg,
-        #00f0ff,
-        #00ffa6
+        rgba(0,212,255,0.8),
+        rgba(0,153,255,0.9),
+        rgba(0,102,255,1)
     );
 
-    box-shadow:
-    0 0 15px rgba(0,255,255,0.8);
+    /* Smooth animation */
+    transition: width 1.5s cubic-bezier(0.22,1,0.36,1);
 
-    transition: width 1.5s ease;
-
+    overflow: hidden; /* IMPORTANT */
 }
 
 
 /* SHIMMER EFFECT */
+/* Highlight effect INSIDE bar only */
 .glass-progress-bar::after {
-
     content: "";
-
     position: absolute;
-
-    width: 40px;
-
+    top: 0;
+    left: -100%;
     height: 100%;
+    width: 40%;
+    
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.6),
+        transparent
+    );
 
-    background: rgba(255,255,255,0.4);
-
-    filter: blur(8px);
-
-    animation: shimmer 2s infinite;
-
+    animation: glassHighlight 2.5s infinite;
 }
 
 
-@keyframes shimmer {
-
-    0% { transform: translateX(-40px); }
-
-    100% { transform: translateX(300px); }
-
+/* Highlight animation */
+@keyframes glassHighlight {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 140%;
+    }
 }
 
 	/* SECTION */
@@ -4925,6 +4922,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*========================Thank you=================
+
 
 
 
