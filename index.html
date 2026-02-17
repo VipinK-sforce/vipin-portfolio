@@ -1435,21 +1435,35 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 
 
 
-		<script>
- document.querySelectorAll(".blog-btn").forEach(btn => {
+	<script>
+document.querySelectorAll(".blog-btn").forEach(btn => {
 
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", function () {
 
-        const card = btn.closest(".blog-card");
+        const card = this.closest(".blog-card");
+        const content = card.querySelector(".blog-full");
 
-        card.classList.toggle("active");
+        const isOpen = card.classList.contains("active");
+
+        if (isOpen) {
+
+            // Close
+            card.classList.remove("active");
+            this.textContent = "Read Article";
+
+        } else {
+
+            // Open
+            card.classList.add("active");
+            this.textContent = "Read Less";
+
+        }
 
     });
 
 });
-;
-
 </script>
+
 <!-- Blog End -->
 
 		
