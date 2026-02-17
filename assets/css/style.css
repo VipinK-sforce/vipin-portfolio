@@ -4792,21 +4792,21 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height: 70px; /* match navbar height */
 }
 
-.navbar-logo {
-    height: 50px;     /* ideal professional size */
-    width: auto;
-    object-fit: contain;
-    display: block;
-    transition: all 0.3s ease;
-}
-
+ 
 /* Ultra-premium hover effect */
 .navbar-logo:hover {
     transform: scale(1.08);
 }
-							 
+
+.navbar-logo {
+    height: 70px;
+    width: auto;
+    object-fit: cover;
+}
+					 
 
 /*========================Thank you=================
+
 
 
 
