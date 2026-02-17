@@ -4644,6 +4644,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /* ============================= */
 /* BLOG PREMIUM SECTION */
 /* ============================= */
+/* ============================= */
+/* BLOG PREMIUM SECTION */
+/* ============================= */
 
 .blog-premium {
 
@@ -4904,9 +4907,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 @keyframes reflectionMove {
 
-    from { transform: translateX(-100%
+    from { transform: translateX(-100%); }
+
+    to { transform: translateX(100%); }
+
+}
+
+								 
 
 /*========================Thank you=================
+
 
 
 
