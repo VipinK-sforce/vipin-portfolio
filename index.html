@@ -1179,78 +1179,117 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			<!-- Git Hub Projects start -->
 <!-- GitHub Projects start -->
-<section id="github" class="portfolio">
+<!-- GitHub Projects start -->
+<section id="github" class="profiles">
 
-    <div class="portfolio-details">
+    <div class="profiles-details">
 
         <div class="section-heading text-center">
             <h2>GitHub Projects</h2>
         </div>
 
         <div class="container">
-            <div class="portfolio-content">
-                <div class="isotope">
-                    <div class="row" id="github-projects">
-                        <!-- Dynamic content will load here -->
-                    </div>
+  <div class="profiles-content">
+  <div class="row" id="github-projects">
+                    <!-- Dynamic Projects Load Here -->
                 </div>
-            </div>
-        </div>
-
-    </div>
+  </div>
+  </div>
+   </div>
 
 </section>
 <!-- GitHub Projects end -->
 
+<!-- GitHub Projects end -->
+
 
 <script>
+
 fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
-.then(response => response.json())
+.then(res => res.json())
 .then(data => {
 
     let html = "";
 
-    data.slice(0,6).forEach(repo => {
+    data.slice(0,8).forEach(repo => {
 
         let image = "assets/images/portfolio/development.png";
 
-        if(repo.name.toLowerCase().includes("sales"))
+        const name = repo.name.toLowerCase();
+
+        if(name.includes("sales"))
             image = "assets/images/portfolio/sales_cloud.png";
 
-        else if(repo.name.toLowerCase().includes("service"))
+        else if(name.includes("service"))
             image = "assets/images/portfolio/service_cloud.png";
 
-        else if(repo.name.toLowerCase().includes("Vk"))
+        else if(name.includes("health"))
             image = "assets/images/portfolio/health_cloud.png";
 
-        else if(repo.name.toLowerCase().includes("Record"))
+        else if(name.includes("lwc") || name.includes("record"))
             image = "assets/images/portfolio/lwc.png";
 
-        else if(repo.name.toLowerCase().includes("flow"))
+        else if(name.includes("flow"))
             image = "assets/images/portfolio/flow.png";
 
-        else if(repo.name.toLowerCase().includes("integration"))
+        else if(name.includes("integration"))
             image = "assets/images/portfolio/integration.png";
 
 
         html += `
-        <div class="col-sm-4">
-            <div class="item">
+        <div class="col-sm-3">
 
-                <!-- Image -->
-                <img src="${image}" alt="${repo.name}" class="img-responsive"/>
+            <div class="single-profile github-card">
 
-                <!-- Overlay without link -->
-                <div class="isotope-overlay">
+                <!-- Default View -->
+                <div class="profile-txt">
 
-                    <div class="project-info">
-                        <h4>${repo.name}</h4>
-                        <small>${repo.description || "Salesforce Project"}</small>
+                    <img src="${image}" 
+                         alt="${repo.name}" 
+                         class="img-responsive center-block"
+                         loading="lazy">
+
+                    <div class="profile-icon-name">
+                        ${repo.name}
+                    </div>
+
+                </div>
+
+                <!-- Hover Overlay -->
+                <div class="single-profile-overlay">
+
+                    <div class="profile-txt">
+
+                        <img src="${image}" 
+                             alt="${repo.name}" 
+                             class="img-responsive center-block">
+
+                        <div class="profile-icon-name">
+                            ${repo.name}
+                        </div>
+
+                        <div class="github-desc">
+                            ${repo.description || "Enterprise Salesforce Project"}
+                        </div>
+
+                        <div class="github-meta">
+                            ⭐ ${repo.stargazers_count}  
+                            &nbsp;&nbsp;  
+                            🍴 ${repo.forks_count}
+                        </div>
+
+                        <a href="${repo.html_url}" 
+                           target="_blank" 
+                           class="github-btn">
+                           View Code
+                        </a>
+
                     </div>
 
                 </div>
 
             </div>
+
         </div>
         `;
     });
@@ -1258,7 +1297,8 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
     document.getElementById("github-projects").innerHTML = html;
 
 })
-.catch(error => console.log(error));
+.catch(err => console.log(err));
+
 </script>
 
 
