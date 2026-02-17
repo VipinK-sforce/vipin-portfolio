@@ -4785,10 +4785,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 }
 
-
+.navbar-logo {
+    height: 45px;        /* professional navbar size */
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
 								 
 
 /*========================Thank you=================
+
 
 
 
