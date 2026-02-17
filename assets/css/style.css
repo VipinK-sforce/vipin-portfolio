@@ -4799,13 +4799,19 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .navbar-logo {
-    height: 70px;
+    height: 60px;          /* increase visible size */
     width: auto;
-    object-fit: cover;
-}
-					 
+    object-fit: contain;
+    
+    /* Fix transparent padding issue */
+    transform: scale(1.8);
+    transform-origin: left center;
+    
+    transition: all 0.3s ease;
+}				 
 
 /*========================Thank you=================
+
 
 
 
