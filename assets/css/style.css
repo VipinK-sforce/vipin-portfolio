@@ -3227,8 +3227,135 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 }
 
+/* SECTION BACKGROUND */
+.certifications-glass {
+
+    padding: 120px 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+    radial-gradient(circle at 10% 20%, rgba(0,255,255,0.12), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0,255,150,0.12), transparent 40%),
+    linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+}
+
+
+/* CARD */
+.cert-glass-card {
+
+    backdrop-filter: blur(25px);
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin: 20px 0;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.15),
+    inset 0 0 15px rgba(255,255,255,0.05);
+
+    transition: all 0.4s ease;
+
+}
+
+
+.cert-glass-card:hover {
+
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+    0 0 50px rgba(0,255,255,0.4);
+
+}
+
+
+/* INNER */
+.cert-glass-inner {
+
+    text-align: center;
+
+}
+
+
+/* TITLE */
+.cert-title {
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+    0 0 10px rgba(0,255,255,0.4);
+
+}
+
+
+/* IMAGE CONTAINER */
+.cert-img-container {
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0,255,255,0.15),
+        rgba(0,255,150,0.15)
+    );
+
+    display: inline-block;
+
+}
+
+
+/* IMAGE */
+.cert-img {
+
+    width: 220px;
+
+    border-radius: 10px;
+
+    border: 2px solid rgba(255,255,255,0.3);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.5);
+
+    transition: 0.4s;
+
+}
+
+
+.cert-glass-card:hover .cert-img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .cert-img {
+
+        width: 180px;
+
+    }
+
+}
 
 /*========================Thank you=================
+
 
 
 
