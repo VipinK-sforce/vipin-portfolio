@@ -3354,7 +3354,142 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 }
 
+	/* SECTION BACKGROUND */
+.education-glass {
+
+    padding: 120px 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+    radial-gradient(circle at 15% 25%, rgba(0,255,255,0.12), transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(0,255,150,0.12), transparent 40%),
+    linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+}
+
+
+/* CARD */
+.edu-glass-card {
+
+    backdrop-filter: blur(25px);
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin: 20px 0;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.15),
+    inset 0 0 15px rgba(255,255,255,0.05);
+
+    transition: all 0.4s ease;
+
+}
+
+
+/* HOVER EFFECT */
+.edu-glass-card:hover {
+
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+    0 0 50px rgba(0,255,255,0.4);
+
+}
+
+
+/* YEAR */
+.edu-year {
+
+    color: #00ffe5;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* DEGREE */
+.edu-degree {
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+    0 0 10px rgba(0,255,255,0.3);
+
+}
+
+
+/* UNIVERSITY */
+.edu-university {
+
+    color: rgba(255,255,255,0.9);
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* LOCATION */
+.edu-location {
+
+    color: rgba(0,255,200,0.8);
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* DESCRIPTION */
+.edu-description {
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .edu-glass-card {
+
+        padding: 25px;
+
+    }
+
+    .edu-degree {
+
+        font-size: 20px;
+
+    }
+
+}
+
 /*========================Thank you=================
+
 
 
 
