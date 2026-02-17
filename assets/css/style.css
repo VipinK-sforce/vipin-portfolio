@@ -4785,15 +4785,29 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 70px; /* match navbar height */
+}
+
 .navbar-logo {
-    height: 90px;        /* professional navbar size */
+    height: 50px;     /* ideal professional size */
     width: auto;
     object-fit: contain;
+    display: block;
     transition: all 0.3s ease;
 }
-								 
+
+/* Ultra-premium hover effect */
+.navbar-logo:hover {
+    transform: scale(1.08);
+}
+							 
 
 /*========================Thank you=================
+
 
 
 
