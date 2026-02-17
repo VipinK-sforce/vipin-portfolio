@@ -3053,9 +3053,46 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     line-height: 30px;
     font-weight: bold;
 }
+.blog-sidebar {
+    padding-left: 20px;
+}
+
+.sidebar-widget {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.sidebar-widget h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.sidebar-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-widget li {
+    margin-bottom: 12px;
+}
+
+.sidebar-widget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-widget span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.6;
+}
 
 
 /*========================Thank you=================
+
 
 
 
