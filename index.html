@@ -1408,20 +1408,16 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 
 		<script>
     // Read More toggle functionality
-    const readMoreButtons = document.querySelectorAll('.read-more');
+   document.querySelectorAll(".read-btn").forEach(button => {
 
-    readMoreButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const fullContent = button.nextElementSibling;
-            if(fullContent.style.display === 'block'){
-                fullContent.style.display = 'none';
-                button.textContent = 'Read More';
-            } else {
-                fullContent.style.display = 'block';
-                button.textContent = 'Read Less';
-            }
-        });
+    button.addEventListener("click", function(){
+
+        this.closest(".blog-card").classList.toggle("active");
+
     });
+
+});
+
 </script>
 <!-- Blog End -->
 
