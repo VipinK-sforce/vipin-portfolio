@@ -606,29 +606,32 @@
 
 </section>
 
-		<script>
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
 
-/* Animate Progress Bars */
+    const observer = new IntersectionObserver(entries => {
 
-document.addEventListener("DOMContentLoaded", function(){
+        entries.forEach(entry => {
 
-    const bars = document.querySelectorAll(".glass-progress-bar");
+            if (entry.isIntersecting) {
 
-    bars.forEach(bar => {
+                const bar = entry.target;
+                bar.style.width = bar.dataset.percent + "%";
 
-        const percent = bar.getAttribute("data-percent");
+                observer.unobserve(bar);
 
-        setTimeout(() => {
+            }
 
-            bar.style.width = percent + "%";
-
-        }, 300);
+        });
 
     });
 
-});
+    document.querySelectorAll(".glass-progress-bar")
+        .forEach(bar => observer.observe(bar));
 
+});
 </script>
+
 		<!--skills end -->
 
 		<!--experience start -->
