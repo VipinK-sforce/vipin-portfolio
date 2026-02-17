@@ -1249,116 +1249,161 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 		
 <!-- Blog Start -->
 <!-- Blog Section -->
-<section id="blog" class="blog-section">
-    <div class="section-heading text-center">
-        <h2>Salesforce Blogs</h2>
+<section id="blog" class="blog-premium">
+
+    <!-- Background Effects -->
+    <div class="blog-bg-glow"></div>
+    <div class="blog-bg-grid"></div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="section-heading text-center blog-header">
+
+            <h2 class="blog-title">Salesforce Engineering Blogs</h2>
+
+            <div class="blog-title-line"></div>
+
+            <p class="blog-subtitle">
+                Insights, Architecture Patterns, and Real-World Salesforce Engineering
+            </p>
+
+        </div>
+
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+
+            <!-- Blog Card -->
+            <div class="blog-card">
+                <div class="blog-glass">
+
+                    <div class="blog-image">
+                        <img src="assets/images/clients/Flow.png">
+                        <div class="image-glow"></div>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>Mastering Salesforce Flow</h3>
+
+                        <p>
+                            Automate business processes using Salesforce Flow without code.
+                        </p>
+
+                        <button class="read-btn">Read Article</button>
+
+                        <div class="full-content">
+                            Salesforce Flow allows automation using Screen Flows, Record-Triggered Flows, and Scheduled Flows. It replaces Workflow Rules and Process Builder and enables enterprise-level automation architecture.
+                        </div>
+
+                    </div>
+
+                    <div class="glass-reflection"></div>
+
+                </div>
+            </div>
+
+
+            <!-- Blog Card -->
+            <div class="blog-card">
+                <div class="blog-glass">
+
+                    <div class="blog-image">
+                        <img src="assets/images/clients/apex.png">
+                        <div class="image-glow"></div>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>Apex Programming Deep Dive</h3>
+
+                        <p>
+                            Build enterprise-grade logic using Apex.
+                        </p>
+
+                        <button class="read-btn">Read Article</button>
+
+                        <div class="full-content">
+                            Apex enables triggers, async processing, integrations, and enterprise business logic. It supports Queueables, Futures, Batch Apex, and Platform Events.
+                        </div>
+
+                    </div>
+
+                    <div class="glass-reflection"></div>
+
+                </div>
+            </div>
+
+
+            <!-- Blog Card -->
+            <div class="blog-card">
+                <div class="blog-glass">
+
+                    <div class="blog-image">
+                        <img src="assets/images/clients/compt.png">
+                        <div class="image-glow"></div>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>Lightning Web Components Architecture</h3>
+
+                        <p>
+                            Build fast, scalable Lightning Web Components.
+                        </p>
+
+                        <button class="read-btn">Read Article</button>
+
+                        <div class="full-content">
+                            LWC uses modern JavaScript, Shadow DOM, and reactive programming to build scalable UI systems.
+                        </div>
+
+                    </div>
+
+                    <div class="glass-reflection"></div>
+
+                </div>
+            </div>
+
+
+            <!-- Blog Card -->
+            <div class="blog-card">
+                <div class="blog-glass">
+
+                    <div class="blog-image">
+                        <img src="assets/images/clients/int.png">
+                        <div class="image-glow"></div>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>Salesforce Integration Patterns</h3>
+
+                        <p>
+                            Connect Salesforce securely with enterprise systems.
+                        </p>
+
+                        <button class="read-btn">Read Article</button>
+
+                        <div class="full-content">
+                            Integration patterns include REST APIs, Platform Events, Middleware, and asynchronous architecture.
+                        </div>
+
+                    </div>
+
+                    <div class="glass-reflection"></div>
+
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 
-    <div class="blog-container">
-        <!-- Blog Card 1 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/Flow.png" alt="Salesforce Flow"/>
-            <div class="blog-content">
-                <h3>Mastering Salesforce Flow</h3>
-                <p>Learn how Salesforce Flow can automate your business processes without writing code.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                    Salesforce Flow allows you to automate complex business processes with clicks. You can create Screen Flows for user input, Record-Triggered Flows for automation, and Scheduled Flows for recurring tasks. Mastering Flow can save hours of manual work.
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Card 2 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/apex.png" alt="Apex Programming"/>
-            <div class="blog-content">
-                <h3>Introduction to Apex Programming</h3>
-                <p>Apex is Salesforce's proprietary programming language to build custom business logic.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                    Apex is similar to Java and allows developers to write custom triggers, classes, and asynchronous processes on Salesforce. Understanding Apex is essential for building scalable and secure enterprise apps.
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Card 3 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/report.png" alt="Reports and Dashboards"/>
-            <div class="blog-content">
-                <h3>Salesforce Reports and Dashboards</h3>
-                <p>Discover how to create insightful reports and dashboards to make data-driven decisions.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                    Salesforce Reports allow you to extract and visualize data for decision-making. Dashboards summarize reports into charts and tables. Using them effectively helps teams track KPIs and measure performance.
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Card 4 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/int.png" alt="Salesforce Integration"/>
-            <div class="blog-content">
-                <h3>Salesforce Integration Techniques</h3>
-                <p>Learn how to connect Salesforce with other systems seamlessly.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                    Integrating Salesforce with external apps and databases ensures seamless data flow. Techniques like REST/SOAP APIs, Platform Events, and Middleware help enterprises automate and synchronize their operations efficiently.
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Card 5 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/compt.png" alt="Lightning Components"/>
-            <div class="blog-content">
-                <h3>Building Lightning Components</h3>
-                <p>Enhance your Salesforce UI with reusable Lightning Web Components.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                    Lightning Web Components (LWC) allow developers to build fast, dynamic, and reusable UI components on Salesforce. Mastering LWC improves user experience and accelerates app development.
-                </div>
-            </div>
-        </div>
-
-		<!-- Blog Card 6 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/Vibe.png" alt="Lightning Components"/>
-            <div class="blog-content">
-                <h3>Introduction to Agentforce Vibes for Salesforce Admins</h3>
-                <p>How to get started with Agentforce Vibes.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                   Currently, Agentforce Vibes works as an extension to Visual Studio (VS) Code, a free and cross-platform bit of software from Microsoft to help with building in a wide variety of environments, including Salesforce with the right extensions. The great news is—thanks to Agentforce Vibes IDE (formerly Code Builder), a browser-based, cloud-hosted version of VS Code—if you have a paid license (production or sandbox), you can access a version of Vibes right from the Setup menu dropdown.
-				</div>
-            </div>
-        </div>
-
-			<!-- Blog Card 7 -->
-        <div class="blog-card">
-            <img src="assets/images/clients/vibe3.png" alt="Lightning Components"/>
-            <div class="blog-content">
-                <h3>Meet your AI-powered coding partner</h3>
-                <p>How to get started with Agentforce Vibes.</p>
-                <a class="read-more">Read More</a>
-                <div class="full-content">
-                   Agentforce Vibes introduces a new autonomous AI coding agent, Agentforce, built to collaborate with you like a pair programmer. When you chat with Agentforce, you’re not just getting code suggestions, you’re getting a coding partner that can understand your project context, and that executes on your behalf to accelerate your development lifecycle.
-
-					Capabilities include:
-					
-					Context-aware Plan mode that understands your Salesforce schema
-					Agentic code generation (Apex, HTML, CSS, JavaScript, and more)
-					Model Context Protocol (MCP) support with 20+ included MCP tools
-					Checkpoints to roll back changes
-					Agentic Rules to tailor agentic development
-					Test case generation
-					Code analysis (security, performance, best practices)
-					Agentic bug resolution
-					Natural language DevOps and app deployment
-				</div>
-            </div>
-        </div>
-    </div>
 </section>
+
 
 
 		<script>
