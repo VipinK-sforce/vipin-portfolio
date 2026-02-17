@@ -3907,9 +3907,84 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: 500;
 
 }
+/* GitHub Glass Card Enhancement */
+
+.github-card {
+
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 18px;
+
+    transition: all .4s ease;
+
+}
+
+.github-card:hover {
+
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.25),
+        inset 0 0 0 1px rgba(255,255,255,0.08);
+
+}
+
+
+/* Description */
+.github-desc {
+
+    font-size: 13px;
+    margin-top: 8px;
+    opacity: .85;
+
+}
+
+
+/* Stars and Forks */
+.github-meta {
+
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: .7;
+
+}
+
+
+/* Button */
+.github-btn {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 6px 16px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.github-btn:hover {
+
+    background: linear-gradient(135deg,#0072ff,#00c6ff);
+
+    transform: scale(1.05);
+
+}
 
 	
 /*========================Thank you=================
+
 
 
 
