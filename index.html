@@ -1103,24 +1103,64 @@ document.addEventListener("DOMContentLoaded", () => {
 			<!-- Git Hub Projects start -->
 <!-- GitHub Projects start -->
 <!-- GitHub Projects start -->
-<section id="github" class="profiles">
+<div class="col-sm-3">
 
-    <div class="profiles-details">
+    <a href="${repo.html_url}" target="_blank" class="github-card-link">
 
-        <div class="section-heading text-center">
-            <h2>GitHub Projects</h2>
+        <div class="single-profile github-card">
+
+            <!-- Default View -->
+            <div class="profile-txt">
+
+                <img src="${image}" 
+                     alt="${repo.name}" 
+                     class="img-responsive center-block github-img"
+                     loading="lazy">
+
+                <div class="profile-icon-name">
+                    ${repo.name}
+                </div>
+
+            </div>
+
+            <!-- Hover Overlay -->
+            <div class="single-profile-overlay">
+
+                <div class="profile-txt">
+
+                    <img src="${image}" 
+                         alt="${repo.name}" 
+                         class="img-responsive center-block github-img">
+
+                    <div class="profile-icon-name">
+                        ${repo.name}
+                    </div>
+
+                    <div class="github-desc">
+                        ${repo.description || "Enterprise Salesforce Project"}
+                    </div>
+
+                    <div class="github-meta">
+                        ⭐ ${repo.stargazers_count}
+                        &nbsp;&nbsp;
+                        🍴 ${repo.forks_count}
+                    </div>
+
+                    <div class="github-btn">
+                        View Code →
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="container">
-  <div class="profiles-content">
-  <div class="row" id="github-projects">
-                    <!-- Dynamic Projects Load Here -->
-                </div>
-  </div>
-  </div>
-   </div>
+    </a>
 
-</section>
+</div>
+
+
 <!-- GitHub Projects end -->
 
 <!-- GitHub Projects end -->
