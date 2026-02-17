@@ -1252,150 +1252,179 @@ fetch("https://api.github.com/users/vipink-sforce/repos?sort=updated")
 <section id="blog" class="blog-premium">
 
     <!-- Background Effects -->
-    <div class="blog-bg-glow"></div>
-    <div class="blog-bg-grid"></div>
+    <div class="blog-bg"></div>
+    <div class="blog-grid-overlay"></div>
 
     <div class="container">
 
         <!-- Header -->
-        <div class="section-heading text-center blog-header">
+        <header class="blog-header text-center">
 
             <h2 class="blog-title">Salesforce Engineering Blogs</h2>
 
-            <div class="blog-title-line"></div>
+            <div class="blog-divider"></div>
 
             <p class="blog-subtitle">
-                Insights, Architecture Patterns, and Real-World Salesforce Engineering
+                Architecture, Automation, Integration, and Enterprise Development
             </p>
 
-        </div>
+        </header>
 
 
         <!-- Blog Grid -->
         <div class="blog-grid">
 
+
             <!-- Blog Card -->
-            <div class="blog-card">
+            <article class="blog-card">
+
                 <div class="blog-glass">
 
-                    <div class="blog-image">
-                        <img src="assets/images/clients/Flow.png">
-                        <div class="image-glow"></div>
-                    </div>
+                    <figure class="blog-image">
+                        <img src="assets/images/clients/Flow.png"
+                             alt="Salesforce Flow"
+                             loading="lazy">
+                    </figure>
 
-                    <div class="blog-content">
+                    <div class="blog-body">
 
                         <h3>Mastering Salesforce Flow</h3>
 
-                        <p>
-                            Automate business processes using Salesforce Flow without code.
+                        <p class="blog-summary">
+                            Automate complex enterprise workflows without code.
                         </p>
 
-                        <button class="read-btn">Read Article</button>
+                        <button class="blog-btn">
+                            Read Article
+                        </button>
 
-                        <div class="full-content">
-                            Salesforce Flow allows automation using Screen Flows, Record-Triggered Flows, and Scheduled Flows. It replaces Workflow Rules and Process Builder and enables enterprise-level automation architecture.
+                        <div class="blog-full">
+                            Salesforce Flow enables enterprise automation using Record-Triggered,
+                            Screen, and Scheduled flows. It replaces legacy Workflow Rules and
+                            Process Builder.
                         </div>
 
                     </div>
 
-                    <div class="glass-reflection"></div>
+                    <span class="glass-shine"></span>
 
                 </div>
-            </div>
+
+            </article>
+
 
 
             <!-- Blog Card -->
-            <div class="blog-card">
+            <article class="blog-card">
+
                 <div class="blog-glass">
 
-                    <div class="blog-image">
-                        <img src="assets/images/clients/apex.png">
-                        <div class="image-glow"></div>
-                    </div>
+                    <figure class="blog-image">
+                        <img src="assets/images/clients/apex.png"
+                             alt="Apex Programming"
+                             loading="lazy">
+                    </figure>
 
-                    <div class="blog-content">
+                    <div class="blog-body">
 
-                        <h3>Apex Programming Deep Dive</h3>
+                        <h3>Apex Enterprise Development</h3>
 
-                        <p>
-                            Build enterprise-grade logic using Apex.
+                        <p class="blog-summary">
+                            Build scalable business logic and integrations.
                         </p>
 
-                        <button class="read-btn">Read Article</button>
+                        <button class="blog-btn">
+                            Read Article
+                        </button>
 
-                        <div class="full-content">
-                            Apex enables triggers, async processing, integrations, and enterprise business logic. It supports Queueables, Futures, Batch Apex, and Platform Events.
+                        <div class="blog-full">
+                            Apex allows enterprise-grade development using triggers,
+                            async processing, batch jobs, integrations, and platform events.
                         </div>
 
                     </div>
 
-                    <div class="glass-reflection"></div>
+                    <span class="glass-shine"></span>
 
                 </div>
-            </div>
+
+            </article>
+
 
 
             <!-- Blog Card -->
-            <div class="blog-card">
+            <article class="blog-card">
+
                 <div class="blog-glass">
 
-                    <div class="blog-image">
-                        <img src="assets/images/clients/compt.png">
-                        <div class="image-glow"></div>
-                    </div>
+                    <figure class="blog-image">
+                        <img src="assets/images/clients/compt.png"
+                             alt="Lightning Web Components"
+                             loading="lazy">
+                    </figure>
 
-                    <div class="blog-content">
+                    <div class="blog-body">
 
                         <h3>Lightning Web Components Architecture</h3>
 
-                        <p>
-                            Build fast, scalable Lightning Web Components.
+                        <p class="blog-summary">
+                            Build fast, modern Salesforce UI systems.
                         </p>
 
-                        <button class="read-btn">Read Article</button>
+                        <button class="blog-btn">
+                            Read Article
+                        </button>
 
-                        <div class="full-content">
-                            LWC uses modern JavaScript, Shadow DOM, and reactive programming to build scalable UI systems.
+                        <div class="blog-full">
+                            Lightning Web Components use modern JavaScript,
+                            Shadow DOM, and reactive rendering for performance.
                         </div>
 
                     </div>
 
-                    <div class="glass-reflection"></div>
+                    <span class="glass-shine"></span>
 
                 </div>
-            </div>
+
+            </article>
+
 
 
             <!-- Blog Card -->
-            <div class="blog-card">
+            <article class="blog-card">
+
                 <div class="blog-glass">
 
-                    <div class="blog-image">
-                        <img src="assets/images/clients/int.png">
-                        <div class="image-glow"></div>
-                    </div>
+                    <figure class="blog-image">
+                        <img src="assets/images/clients/int.png"
+                             alt="Salesforce Integration"
+                             loading="lazy">
+                    </figure>
 
-                    <div class="blog-content">
+                    <div class="blog-body">
 
-                        <h3>Salesforce Integration Patterns</h3>
+                        <h3>Integration Architecture Patterns</h3>
 
-                        <p>
-                            Connect Salesforce securely with enterprise systems.
+                        <p class="blog-summary">
+                            Connect Salesforce with enterprise systems securely.
                         </p>
 
-                        <button class="read-btn">Read Article</button>
+                        <button class="blog-btn">
+                            Read Article
+                        </button>
 
-                        <div class="full-content">
-                            Integration patterns include REST APIs, Platform Events, Middleware, and asynchronous architecture.
+                        <div class="blog-full">
+                            Integration patterns include REST APIs, Middleware,
+                            Platform Events, and asynchronous messaging.
                         </div>
 
                     </div>
 
-                    <div class="glass-reflection"></div>
+                    <span class="glass-shine"></span>
 
                 </div>
-            </div>
+
+            </article>
 
 
         </div>
